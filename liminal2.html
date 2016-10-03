@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Liminality</title>
+<meta name="generator" content="Textplay">
+<style type="text/css" media="all">
+
+/* ---------- PAGE STYLES ---------- */
+
+/* all page margins are maximums */
+@page {
+size: 8.5in 11in;
+margin-top:1in;
+margin-right:1in;
+margin-bottom:.5in;
+margin-left:1.5in;
+}
+/* This makes the page-counter start on the first page of the screenplay */
+div#screenplay {
+counter-reset: page 1;
+page: Screenplay;
+prince-page-group: start;
+}
+@page Screenplay {
+/* Page Numbers */
+@top-right-corner {
+font: 12pt "Courier Prime", courier;
+content: counter(page)".";
+vertical-align: bottom;
+padding-bottom: 1em;
+}
+/* Define Header */
+@top-left {
+content: "";
+font: italic 10pt Georgia;
+color: #888;
+vertical-align: bottom;
+padding-bottom: 1.3em;
+}
+/* Define Footer */
+@bottom-left {
+content: "";
+font: italic 10pt Georgia;
+color: #888;
+vertical-align:top;
+padding-top:0;
+}
+}
+/* removes the header and page-numbers from the first page */
+@page Screenplay:first {
+@top-right-corner { content: normal; }
+@top-left { content: normal; }
+}
+/* These control where page-breaks can and cannot happen */
+p {
+orphans: 2;
+widows: 2;
+}
+dl {
+page-break-inside:avoid;
+}
+dt, h2, h5 {
+page-break-after: avoid;
+}
+dd.parenthetical {
+orphans: 3;
+widows: 3;
+page-break-before: avoid;
+page-break-after: avoid;
+}
+dd {
+page-break-before:avoid;
+}
+div.page-break {
+page-break-after:always;
+}
+h3 {
+page-break-before: avoid;
+}
+/* by default Prince bookmarks all headings, no thanks */
+h3, h4, h5, h6 {
+prince-bookmark-level: none;
+}
+
+/* ---------- COMMON LAYOUT ---------- */
+
+body {
+font-family: "Courier Prime", courier;
+font-size: 12pt;
+line-height: 1;
+}
+#screenplay {
+width: 6in;
+margin:0 auto;
+}
+p.center {
+text-align:center;
+margin-left:0;
+width:100%;
+}
+p {
+margin-top:12pt;
+margin-bottom:12pt;
+margin-left:0;
+padding-right:.25in;
+width:6in;
+white-space: pre-wrap;
+}
+
+/*Character Names*/
+
+dt {
+font-weight:normal;
+margin-top:1em;
+margin-left:2in;
+padding-right:.25in;
+width:4in;
+}
+
+/*Parentheticals*/
+
+dd.parenthetical {
+margin-left:1.6in;
+text-indent:-.12in;
+width: 2in;
+padding-right:2.66in;
+}
+
+/*Dialogue*/
+
+dd {
+margin:0;
+margin-left: 1in;
+width: 3.5in;
+padding-right:1.75in;
+line-height: inherit;
+white-space: pre-wrap;
+}
+
+/* Dual-Dialogue-blocks */
+
+div.dialogue_wrapper {
+overflow:auto;
+width:100%;
+}
+
+dl.dual {
+width:2.9in;
+}
+
+dl.dual dt, dl.dual dd {
+margin-left:0;
+width:2.5in;
+padding-right:.25in;
+}
+
+dl.dual.first {
+float:left;
+margin-top:-12pt;
+}
+
+dl.dual.second {
+margin-right:0;
+margin-left:auto;
+}
+
+dl.dual dt {
+text-align:center;
+}
+
+dl.dual dd.parenthetical {
+width:2.1in;
+margin-left:.32in;
+}
+
+/* Lyrics */
+span.lyric {
+font-style: italic;
+}
+
+span.lyric i {
+font-style: normal;
+}
+
+
+/* Sluglines and Transitions */
+
+h1,h2,h3,h4,h5,h6 {
+font-weight: normal;
+font-size: 12pt;
+margin-top: 1em;
+margin-bottom: 1em;
+padding-right:.25in;
+text-transform:uppercase;
+}
+
+/* Full Sluglines */
+
+h2 {
+width: inherit;
+margin-top: 1em;
+margin-bottom: 12pt;
+margin-left: 0;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* Right Transitions */
+
+h3 {
+margin-left: 4in;
+width: 2in;
+}
+
+/* Left Transitions */
+
+h4 {
+
+}
+
+/* Goldman Sluglines */
+
+h5 {
+margin-top: 1em;
+font-weight: bold;
+text-decoration: none;
+}
+
+span.underline {
+text-decoration:underline;
+}
+.comment {
+display:none
+}
+
+.revised { background:rgba(255, 255, 0, 0.2); }
+
+</style>
+</head>
+<body>
+
+<div id="screenplay">
+<!--<meta_block>
+<meta-single><key>Title</key><value>Liminality</value></meta-single>
+<meta-single><key>Draft date</key><value>9/08/2016</value></meta-single>
+</meta_block>-->
+
+<h2 class="full-slugline">EXT - HURON FOREST - DAWN (SOUNDSTAGE)</h2>
+
+<p class="action">W/S - soft ambient light, no obvious source, but falls off quickly. The sound-stage has been set with thick pine trunks to resemble a forest. Fr BREBEUF kneels in front of stained glass window suspended in the air. His black robe is hiked up so his knobby knees are shaking in the snow and ice. He clutches a wooden rosary in his right hand and whispers prayers to himself.</p>
+
+<h5 class="goldman-slugline">MONTAGE</h5>
+
+<p class="action">- Roving CUs of Brebeuf bony hands and knees. Wiry mustache hair hangs over his upper lip. The texture of his robe is illuminated in waves of blue light.</p>
+
+<p class="action">- OTS of Brebeuf. Finally we see the stained glass straight on. It is a white cross on a field of dark blue and purple. A burning lamplight gleams behind the stained glass, only visible through the portal. Brebeuf stands, silhouetted in the gleaming light.</p>
+
+<h3 class="right-transition">CUT TO:</h3>
+
+<h2 class="full-slugline">EXT - HURON FOREST - DAWN (REAL WOODS)</h2>
+
+<p class="action">Wide: Brebeuf walks away off camera left. Behind him is a tree with an enameled cross nailed to it.</p>
+
+<h3 class="right-transition">CUT TO:</h3>
+
+<h2 class="full-slugline">EXT - HURON VILLAGE - EARLY MORNING (SOUNDSTAGE)</h2>
+
+<p class="action">OTS: Brebeuf walks crossing from lower left to just above center. Ahead of him is a wooden long-house, with a shaggy bark roof. Behind the long-house is a MATTE PAINTING of several more houses along the glittering shore of Lake Huron.</p>
+
+<h3 class="right-transition">CUT TO:</h3>
+
+<h2 class="full-slugline">INT/EXT - HURON LONGHOUSE (SOUNDSTAGE)</h2>
+
+
+
+<p class="action">Framed up tight around the long-house. A border of sound-stage creating a matte around the action. Brebeuf walks through the curtain.</p>
+
+<h2 class="full-slugline">INT - LONGHOUSE</h2>
+
+<p class="action">An OLD WOMAN sitting by the door hisses when she sees Brebeuf enter.</p>
+
+<dl>
+<dt class="character">OLD WOMAN</dt>
+<dd class="dialogue">There are no sick or dying here! Get! Take your evil medicine to our enemies if your god is still hungry.</dd>
+</dl>
+
+<p class="action">She pulls at Brebeuf's robe and he clutches it close as he walks past her.</p>
+
+<p class="action">The long-house is full of Huron young and old. Brebeuf makes his way to the center of the long-house. Seated in a half-circle around a large fire are the elders of the tribe. CANCERMAN stands opposite them, back to us, gesturing and speaking excitedly. </p>
+
+<dl>
+<dt class="character">CANCERMAN</dt>
+<dd class="dialogue">...This is how it was in my dream! No medicine can cure the cancer except dream medicine. I have seen it. I have seen my cancer burned away and the strong Huron flesh revealed. The sorcerer was wrong...</dd>
+</dl>
+
+<dl>
+<dt class="character">ELDER 1</dt>
+<dd class="parenthetical">(interrupting)</dd>
+<dd class="dialogue">What did you see? Tell us what you saw.</dd>
+</dl>
+
+<dl>
+<dt class="character">ELDER 2</dt>
+<dd class="dialogue">Leave nothing out. Dream medicine is exact.</dd>
+</dl>
+
+<p class="action">Brebeuf kneels near the fire.</p>
+
+<p class="action">Reverse of Cancerman. His sweaty face gleams in the fire-light. His right arm is swollen with tumors.</p>
+
+<dl>
+<dt class="character">CANCERMAN</dt>
+<dd class="parenthetical">(haltingly)</dd>
+<dd class="dialogue">I wore wampum beaded with the stars in the night sky, and sat at the head of a feast. The spirit of the great beaver came. He visited with me and saw the honor of our feast and was pleased...and I saw the great Huron spirit. All our ancestor spirits circled around him as he came, whispering the great stories of the Huron...remembering the strength of our nation. </dd>
+</dl>
+
+<dl>
+<dt class="character">ELDER 2</dt>
+<dd class="dialogue">What did the spirit say? Did he come to bring back our strength?
+Will we defeat the Iroquois invaders?</dd>
+</dl>
+
+<dl>
+<dt class="character">CANCERMAN</dt>
+<dd class="dialogue">He cut away the cancer from my arm, and underneath was black and wet as pitch.</dd>
+</dl>
+
+<p class="action">Cancerman looks at his arm as he speaks, his eyes wide and serious.</p>
+
+<dl>
+<dt class="character">CANCERMAN (CONT'D)</dt>
+<dd class="dialogue">The pitch was our shame. The huron shame. He saw us send our iriqouis captives to the mercy of the french god. He saw our children dying of french magic. He saw...</dd>
+</dl>
+
+<dl>
+<dt class="character">ELDER 1</dt>
+<dd class="parenthetical">(interrupting)</dd>
+<dd class="dialogue">Enough.</dd>
+</dl>
+
+<p class="action">Cancerman collapses in front of the fire, next to the still kneeling Brebeuf. The elders confer amongst each other. Brebeuf feels something on his hands, he lifts his fingers and they are black with pitch.</p>
+
+<p class="action">CU: ELDERS FACE</p>
+
+<dl>
+<dt class="character">ELDER 1 (CONT'D)</dt>
+<dd class="dialogue">We must prepare for a feast.</dd>
+</dl>
+
+<p class="action">EXT - WOODS DAY</p>
+
+</div><!-- end screenplay -->
+</body>
+</html>
